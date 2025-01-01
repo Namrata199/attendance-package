@@ -1,6 +1,6 @@
 <?php
 
-namespace  Namratalohani\FilamentHrSystem\Filament\Widgets;
+namespace Namratalohani\FilamentHrSystem\Filament\Widgets;
 
 use Carbon\Carbon;
 use Filament\Widgets\Widget;
@@ -9,7 +9,7 @@ use Namratalohani\FilamentHrSystem\Models\Attendance;
 
 class AttendanceWidget extends Widget
 {
-    protected static string $view = 'attendance::filament.widgets.attendance-widget';
+    protected static string $view = 'filament-hr-system::filament.widgets.attendance-widget';
 
     protected int|string|array $columnSpan = 'full';
 

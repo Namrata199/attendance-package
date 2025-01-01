@@ -9,7 +9,7 @@
                     <button 
                         wire:click="toggleAttendance" 
                         class="px-6 py-3 text-lg font-semibold rounded-lg transition duration-300 
-                            {{ $currentState === 'out' ? ' text-white' : 'bg-red-500 hover:bg-red-600 text-white' }}">
+                            {{ $currentState === 'out' ? 'text-white bg-green-500 hover:bg-green-600' : 'bg-red-500 hover:bg-red-600 text-white ' }}">
                         {{ $currentState === 'out' ? 'Clock In' : 'Clock Out' }}
                     </button>
                     <div class="text-sm text-gray-600 dark:text-gray-300 mt-4">

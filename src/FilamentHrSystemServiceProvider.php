@@ -18,7 +18,7 @@ class FilamentHrSystemServiceProvider extends ServiceProvider
          * Optional methods to load your package assets
          */
         // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'filament-hr-system');
-        // $this->loadViewsFrom(__DIR__.'/../resources/views', 'filament-hr-system');
+        $this->loadViewsFrom(__DIR__.'/../resources/views', 'filament-hr-system');
         $this->publishes([
             __DIR__.'/../database/migrations' => database_path('migrations'),
         ], 'migrations');
