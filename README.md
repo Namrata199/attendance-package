@@ -172,13 +172,8 @@ If you’re cloning the repository:
    ```bash
    composer install
    ```
-
-4. Link the package to your project (if working locally):
-   ```bash
-   composer require path/to/your/package
-   ```
-
-5. Follow the installation steps above to configure the package.
+   
+4. Follow the installation steps above to configure the package.
 
 ---
 
