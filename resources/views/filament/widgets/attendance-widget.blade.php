@@ -4,7 +4,6 @@
             <!-- Attendance Section -->
             <div class="bg-white dark:bg-gray-800 flex flex-col items-center justify-center p-4 rounded-lg shadow">
                 <h2 class="text-3xl font-bold text-gray-800 dark:text-gray-200 mb-8">Attendance</h2>
-                
                 <div class="mb-6">
                     <button 
                         wire:click="toggleAttendance" 
@@ -12,7 +11,7 @@
                             {{ $currentState === 'out' ? 'text-white bg-green-500 hover:bg-green-600' : 'bg-red-500 hover:bg-red-600 text-white ' }}">
                         {{ $currentState === 'out' ? 'Clock In' : 'Clock Out' }}
                     </button>
-                    <div class="text-sm text-gray-600 dark:text-gray-300 mt-4">
+                    <div class="text-sm text-center text-gray-600 dark:text-gray-300 mt-4">
                         @if ($currentState === 'in')
                             Last Clock-In: {{ $latestIn ? \Carbon\Carbon::parse($latestIn)->format('h:i A') : 'N/A' }}
                         @else
